@@ -1,4 +1,10 @@
 const fetch = require('node-fetch');
+const express = require('express');
+const app = express(); 
+
+app.listen(process.env.PORT, () => {
+    console.log(`Now listening on port ${port}`);
+}); 
 
 require('dotenv').config();
 const { Client, Intents } = require('discord.js');
